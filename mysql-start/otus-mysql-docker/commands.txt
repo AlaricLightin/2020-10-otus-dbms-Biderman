@@ -1,0 +1,5 @@
+docker exec otus-mysql-docker_otusdb_1 cat /etc/hosts
+
+docker run --network=otus-mysql-docker_default --rm=true --name=sb-prepare severalnines/sysbench sysbench --db-driver=mysql --oltp-table-size=100000 --oltp-tables-count=24 --threads=1 --mysql-host=172.29.0.2 --mysql-port=3306 --mysql-user=sbtest --mysql-password=password /usr/share/sysbench/tests/include/oltp_legacy/parallel_prepare.lua run
+
+docker run --network=otus-mysql-docker_default --name=sb-run severalnines/sysbench sysbench --db-driver=mysql --report-interval=2 --mysql-table-engine=innodb --oltp-table-size=100000 --oltp-tables-count=24 --threads=64 --time=99999 --mysql-host=172.29.0.2 --mysql-port=3306 --mysql-user=sbtest --mysql-password=password /usr/share/sysbench/tests/include/oltp_legacy/oltp.lua run

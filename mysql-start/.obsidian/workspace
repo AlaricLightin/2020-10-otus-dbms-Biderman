@@ -1,0 +1,96 @@
+{
+  "main": {
+    "id": "1ba9409cdb96b9db",
+    "type": "split",
+    "children": [
+      {
+        "id": "ef15debfbb2fbc07",
+        "type": "leaf",
+        "active": true,
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "readme.md",
+            "mode": "source"
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "2bffcfee14e4e7ab",
+    "type": "split",
+    "children": [
+      {
+        "id": "807ec879171593d9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "79b7308a847c628f",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "3b99bacee470da05",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "341a5ba7b946c706",
+    "type": "split",
+    "children": [
+      {
+        "id": "572c1dcbcdee6328",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b35c43dbf312bed7",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "readme.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "lastOpenFiles": [
+    "readme.md",
+    "settings_check.PNG",
+    "connect.PNG",
+    "start.PNG",
+    "Pasted image 20210122140739.png",
+    "otus-mysql-docker/README.md"
+  ]
+}
