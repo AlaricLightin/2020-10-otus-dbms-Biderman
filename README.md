@@ -6,3 +6,4 @@
 * doc-creation-mysql - код создания базы данных для системы создания документации в MySQL, ДЗ 8-9
 * postgres-connect - описание подключения к PostgreSQL в докере, ДЗ 3
 * mysql-start - создание БД MySQL в докере, ДЗ 7
+* replication - репликация в PostgreSQL, ДЗ 6
