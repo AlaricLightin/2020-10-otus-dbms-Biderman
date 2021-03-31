@@ -7,4 +7,5 @@
 * postgres-connect - описание подключения к PostgreSQL в докере, ДЗ 3
 * mysql-start - создание БД MySQL в докере, ДЗ 7
 * replication - репликация в PostgreSQL, ДЗ 6
-* shopify - работа с данными из CSV Shopify, ДЗ 10ч2, 11
+* shopify - работа с данными из CSV Shopify (MySQL), ДЗ 10ч2, 11
+* some_customers - построение модели данных о пользователях (PostgreSQL), ДЗ 17
