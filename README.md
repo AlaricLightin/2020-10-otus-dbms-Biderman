@@ -9,3 +9,4 @@
 * replication - репликация в PostgreSQL, ДЗ 6
 * shopify - работа с данными из CSV Shopify (MySQL), ДЗ 10ч2, 11
 * some_customers - построение модели данных о пользователях (PostgreSQL), ДЗ 17
+* mongo - работа с Mongo DB, ДЗ 18
