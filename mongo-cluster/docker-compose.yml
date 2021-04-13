@@ -1,0 +1,93 @@
+version: '3.1'
+
+services:
+  mongo_1_1:
+    image: mongo:4.4.4-bionic
+    command: mongod --replSet RS1
+    expose:
+      - "27017"
+
+  mongo_1_2:
+    image: mongo:4.4.4-bionic
+    command: mongod --replSet RS1
+    expose:
+      - "27017"
+
+  mongo_1_3:
+    image: mongo:4.4.4-bionic
+    command: mongod --replSet RS1
+    expose:
+      - "27017"
+
+  mongo_2_1:
+    image: mongo:4.4.4-bionic
+    command: mongod --replSet RS2
+    expose:
+      - "27017"
+
+  mongo_2_2:
+    image: mongo:4.4.4-bionic
+    command: mongod --replSet RS2
+    expose:
+      - "27017"
+
+  mongo_2_3:
+    image: mongo:4.4.4-bionic
+    command: mongod --replSet RS2
+    expose:
+      - "27017"
+
+  mongo_3_1:
+    image: mongo:4.4.4-bionic
+    command: mongod --replSet RS3
+    expose:
+      - "27017"
+
+  mongo_3_2:
+    image: mongo:4.4.4-bionic
+    command: mongod --replSet RS3
+    expose:
+      - "27017"
+
+  mongo_3_3:
+    image: mongo:4.4.4-bionic
+    command: mongod --replSet RS3
+    expose:
+      - "27017"
+
+  mongo_cfg_1:
+    image: mongo:4.4.4-bionic
+    command: mongod --configsvr --replSet RScfg
+    expose:
+      - "27017"
+
+  mongo_cfg_2:
+    image: mongo:4.4.4-bionic
+    command: mongod --configsvr --replSet RScfg
+    expose:
+      - "27017"
+
+  mongo_cfg_3:
+    image: mongo:4.4.4-bionic
+    command: mongod --configsvr --replSet RScfg
+    expose:
+      - "27017"
+
+  # инстанс, который инициализирует replica-set'ы
+  mongo_init:
+    build:
+      context: mongo_init/.
+    restart: on-failure
+    depends_on:
+      - mongo_1_1
+      - mongo_1_2
+      - mongo_1_3
+      - mongo_2_1
+      - mongo_2_2
+      - mongo_2_3
+      - mongo_3_1
+      - mongo_3_2
+      - mongo_3_3
+      - mongo_cfg_1
+      - mongo_cfg_2
+      - mongo_cfg_3
